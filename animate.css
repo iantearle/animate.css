@@ -32,6 +32,22 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 	        animation-duration: 2s;
 }
 
+.animated.alternate {
+	-webkit-animation-direction: alternate;
+    	   -moz-animation-direction: alternate;
+            -ms-animation-direction: alternate;
+	     -o-animation-direction: alternate;
+	     	animation-direction: alternate;
+}
+
+.animated.infinate {
+	-webkit-animation-iteration-count: infinite;
+	   -moz-animation-iteration-count: infinite;
+	    -ms-animation-iteration-count: infinite;
+	     -o-animation-iteration-count: infinite;
+		animation-iteration-count: infinite;
+}
+
 @-webkit-keyframes flash {
 	0%, 50%, 100% {opacity: 1;}	
 	25%, 75% {opacity: 0;}
@@ -3260,4 +3276,114 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
     -moz-animation-duration: 0.75s;
     -o-animation-duration: 0.75s;
     animation-duration: 0.75s;
+}
+
+@-webkit-keyframes wave {
+    0% {
+    	-webkit-transform-origin: left center;
+    }
+
+    25% {
+        -webkit-transform: translateY(50px);
+    }
+
+    50% {
+        -webkit-transform: translateY(-50px);
+    }
+
+    75% {
+        -webkit-transform: translateY(50px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+    }
+}
+
+@-moz-keyframes wave {
+    0% {
+    	-moz-transform-origin: left center;
+    }
+
+    25% {
+        -moz-transform: translateY(50px);
+    }
+
+    50% {
+        -moz-transform: translateY(-50px);
+    }
+
+    75% {
+        -moz-transform: translateY(50px);
+    }
+
+    100% {
+        -moz-transform: translateY(0);
+    }
+}
+
+@-ms-keyframes wave {
+    0% {
+    	-ms-transform-origin: left center;
+    }
+
+    25% {
+        -ms-transform: translateY(50px);
+    }
+
+    50% {
+        -ms-transform: translateY(-50px);
+    }
+
+    75% {
+        -ms-transform: translateY(50px);
+    }
+
+    100% {
+        -ms-transform: translateY(0);
+    }
+}
+
+@-o-keyframes wave {
+    0% {
+    	-o-transform-origin: left center;
+    }
+
+    25% {
+        -o-transform: translateY(50px);
+    }
+
+    50% {
+        -o-transform: translateY(-50px);
+    }
+
+    75% {
+        -o-transform: translateY(50px);
+    }
+
+    100% {
+        -o-transform: translateY(0);
+    }
+}
+
+@keyframes wave {
+    0% {
+    	transform-origin: left center;
+    }
+
+    25% {
+        transform: translateY(50px);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
+
+    75% {
+        transform: translateY(50px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
